@@ -2,6 +2,7 @@
 
 namespace StringListBenchmark;
 
+[MemoryDiagnoser, RPlotExporter]
 public class CaseSensitiveStringListValidation
 {
     private static readonly string[] _codesArray = [
@@ -18,7 +19,6 @@ public class CaseSensitiveStringListValidation
     ];
     private static readonly List<string> _codesList = new(_codesArray);
     private static readonly string[] _testArray = [.. _codesArray,
-        "Cd78Ef90",
         "1a2B3c4D",
         "6F7g8H9i0",
         "1k2L3m4N5",

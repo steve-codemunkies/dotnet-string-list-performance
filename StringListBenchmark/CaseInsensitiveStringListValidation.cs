@@ -2,6 +2,7 @@
 
 namespace StringListBenchmark;
 
+[MemoryDiagnoser, RPlotExporter]
 public class CaseInsensitiveStringListValidation
 {
     private static readonly string[] _codesArray = [
